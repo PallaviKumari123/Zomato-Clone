@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+*{
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+/*header-background- image*/
+.background{
+    background-image:linear-gradient(180deg, #9D0E0E00 0%, #200303 100%), url(./home.png); 
+    width: auto ;
+    height: 400px ;
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+    mix-blend-mode: multiply;
+    opacity: 1;
+    background-position: center;
+}
+
+/*Login*/
+.btn{
+    width: 180px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* e! */
+.brand{
+    border: 1px solid #707070;
+    border-radius: 50%;
+    height: 137px;
+    width: 137px;
+    color: #EB2929;
+    font-size: 70px;
+}
+
+.brandtwo{
+    border: 1px solid #707070;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    color: #EB2929;
+    font-size: 30px;
+}
+/*location search*/
+.search{
+    height: 45px;
+    width: 245px;
+    border: 1px solid white;
+    outline: none;
+}
+/*restaurant-search magnify-glass-box*/
+.search-btn{
+    border: 1px solid white;
+    outline: none;
+    height: 45px;
+    width: 45px;
+ }
+/*restaurant search*/
+.search-rest{
+    border: 1px solid white;
+    height: 45px;
+    width: 325px;
+    outline: none;
+}
+
+/*search location and restaurant option box*/
+.search-opt{
+    position: relative;
+    top: -23px;
+    outline: none;
+    padding: 10px;
+    border: 1px solid white;
+    height: 2px;
+    transition: 0.5s;
+    width: 2px;
+    font-size: 16px;
+}
+/*location option after hovering*/
+.search:hover > .search-opt{
+    width: 245px;
+    height: 45px;
+    position: relative;
+    top: -40px ;
+}
+/*restaurant option after hovering*/
+.search-rest:hover > .search-opt{
+    width: 370px;
+    height: 45px;
+    position: relative;
+    top: -40px;
+    left: -45px;
+    padding-left: 42px;
+}
+
+/*bottom-part background*/
+.colour-background{
+    background-color: white;
+}
+
+/*food-type boxes*/
+.food-box{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 3px 3px 4px #00000029;
+    transition: 0.8s;
+    height: 160px;
+    width: 360px;
+}
+.food-img{
+    height: 160px;
+    width: 140px;
+}
+.selectLoc{
+    width: 10rem;
+}
+.search-box{
+    box-shadow: 3px 3px 4px #00000029;
+    transition: 0.8s;
+}
+.search-box:hover{
+    height: 45%;
+    width: 95%;
+    box-shadow: 5px 4px 5px rgb(131, 148, 87);
+}
+/*food-type box -> image*/
+.search-food-img{
+    height: 7rem;
+    width: 7rem;
+}
+
+/*text-grey*/
+.colour-grey{
+    color: #8C96AB;
+}
+/*text-blue*/
+.colour-blue{
+    color: #192F60;;
+}
+
+/*food-box after hovering*/
+.food-box:hover{
+    height: 170px;
+    width: 375px;
+    box-shadow: 4px 4px 5px rgb(131, 148, 87);
+}
+/*Image at gallary btn*/
+.gallaryimg{
+    height: 21rem;
+}
+/*click gallary btn*/
+.gallarybtn{
+    position:absolute;
+    top: 78%;
+    right: 3%;
+    opacity: 0.8;
+}
+
+.fontsixteen{
+    font-size: 16px;
+}
+
+.fontten{
+    font-size: 10px;
+}
+.vegLogo{
+    height: 6%;
+    width: 4%;
+}
+
+/*changes for responsive website*/
+@media screen and (min-width: 768px) {
+    .colour-background{
+        padding-left: 118px;
+    }
+    .search{
+        flex-direction: row !important; 
+    }  
+}
+
+@media screen and (max-width: 768px){
+    .background{
+        background-size: cover cover !important;
+        background-position: center;
+    }
+    .main-search{
+        flex-direction: column;
+    }
+    .search{
+        width: 100%;
+    }
+    .search-rest{
+        width: 100%;
+    }
+    .search:hover > .search-opt{
+        width: 100%;
+    }
+    .search-rest > .search-opt{
+        width: 100%;
+    }
+}
+
